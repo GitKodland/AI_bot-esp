@@ -22,7 +22,7 @@ def get_duck_image_url():
 
 @bot.command('duck')
 async def duck(ctx):
-    '''The duck command returns the photo of the duck'''
+    '''El comando "duck" devuelve la foto del pato'''
     print('hello')
     image_url = get_duck_image_url()
     await ctx.send(image_url)
@@ -37,7 +37,7 @@ async def check(ctx):
             await attachment.save(f"./{attachment.filename}")
             await ctx.send(get_class(model_path="./keras_model.h5", labels_path="labels.txt", image_path=f"./{attachment.filename}"))
     else:
-        await ctx.send("You forgot to upload the image :(")
+        await ctx.send("Olvidaste subir la imagen :(")
 
 
 bot.run('TOKEN')
