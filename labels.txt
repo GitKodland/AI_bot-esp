@@ -1,2 +1,2 @@
-0 Sparrow
-1 Pigeon
+0 Gorrión
+1 Pichón
